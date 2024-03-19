@@ -191,7 +191,7 @@ py manage.py craetesuperuser
 
 
 very important file to check for any new django project:
-["Django Full Instrunctions"]([https://youtu.be/MbbDADY4GTA](https://docs.google.com/document/d/17E5_Ya9WDmsoZmRAWu1fUmRIXcdj18zTopERHX9KTOA/edit?fbclid=IwAR2QRLtmOdn3g1fcI7StG8xuzDO64w2ej6gVn8W3JDrEMd8jRV8CiMUTpNk))
+["Django Full Instrunctions"]([https://youtu.be/MbbDADY4GTA](https://docs.google.com/document/d/17E5_Ya9WDmsoZmRAWu1fUmRIXcdj18zTopERHX9KTOA/edit?fbclid=IwAR2QRLtmOdn3g1fcI7StG8xuzDO64w2ej6gVn8W3JDrEMd8jRV8CiMUTpNk)
 
 
 
