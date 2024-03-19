@@ -127,7 +127,77 @@ Database => Models => Views => Templates => display on your browser
 
 
 
-# Django Section Important 
+# Django Section Importan Information and commands:
+
+- Django Project => serves as the top-level container for your web application. It encompasses everything related to your application, including settings, URLs, database configurations, and more.
+- Django Applications =>  it is a Python package that provides a specific set of features. Applications are wired into projects using the INSTALLED_APPS setting in the project’s settings.py. This setting specifies which applications are part of the project.
+
+General Commands and information that can be used with any django project
+
+Installing packages:
+pip install django
+pip freeze --local > requirements.txt
+
+
+Create django project:
+django-admin startproject project_name .    => the dot at the end tells that the project should be created in the current directory
+py manage.py runserver  => within this process you can open the browser and take the url (host name) and past it inside project_name/settings.py => ALLOWED_HOSTS = [' HERE PAST IT like 127.... ']
+
+
+Create django apps:
+py manage.py startapp app_name
+
+
+Create views:
+Go to: app_name/views.py
+
+
+Create URLs: 
+Go to: project_name/urls.py
+You must setup the main urls for your project and for the apps too there (project_name/urls.py) - then you can move and go to inside each app and modify its urls.py for each view and page.
+
+
+Create models and define the DB structure:
+Go to: app_name/models.py within this file stored the DB models and define the structure of the DB used by our app
+
+
+Add apps to your project:
+Go to: project_name/settings.py
+
+INSTALLED_APPS = [ 
+       "HERE YOU CAN ADD YOUR APPs",
+       "HERE YOU CAN ADD YOUR APPS",
+       
+]
+
+also inside the settings.py another settings to set like secrit key , db connection.
+
+
+* manage.py file is in the root directory, above the project folder. It's used to create apps, run the project and preform some DB options.
+
+
+Create DB table:
+py manage.py migrate
+
+
+apply the changes on table fields through run:
+py manage.py makemigrations
+py manage.py migrate
+
+
+Craete DB admin:
+py manage.py craetesuperuser
+
+
+
+very important file to check for any new django project:
+["Django Full Instrunctions"]([https://youtu.be/MbbDADY4GTA](https://docs.google.com/document/d/17E5_Ya9WDmsoZmRAWu1fUmRIXcdj18zTopERHX9KTOA/edit?fbclid=IwAR2QRLtmOdn3g1fcI7StG8xuzDO64w2ej6gVn8W3JDrEMd8jRV8CiMUTpNk))
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+### Some commands that related to the todo project:
 
 py -m django startproject django_todo
 
