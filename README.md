@@ -49,6 +49,47 @@ DRY => Don't repeat yourself
   It makes change easier later on
   Helps when it's time for maintenance
 
+dealing with a dry rule. So a good programmer is a lazy programmer, that thinks
+things through they'll build it once and reuse it again. So let's look at an
+example, you might be involved in building a large software project.
+You will initially be overwhelmed by the overall complexity, because we
+humans are not good at managing complexity. What we are good at is finding
+creative solutions for problems that are small chunkable manageable units. And a
+basic strategy for reducing complexity, to these manageable units is to divide a
+system into parts that are more easily tackled. You might first want to divide
+your system into components, where each component represents a subsystem that
+contains everything needed to accomplish some specific
+functionality. For example, if you're building a web application that includes
+membership, a blog, maybe a forum, some kind of payment system and
+administration area, you might chunk each of these features into components.
+The membership component, could be divided into say smaller sub components
+like role management authorisation and authentication. When we divide systems
+into components and subcomponents we eventually arrive at a level where the
+complexity is reduced to a single responsibility. These responsibilities
+can sometimes be implemented as single functions. At this level, the problems
+become easier to solve and the result can be a clean well thought-out solution
+that can be understood and reused again in later projects.
+That solution represents the responsibility. It can communicate with other islands of
+responsibility, that it can turn communicate with other islands
+themselves, to compose an overall solution to the more abstract high-level
+problem that the project is trying to solve in the first place.
+The DRY principle insists that each Island of responsibility is unique in what it does.
+What emerges when DRY is implemented what is what call is what's called a
+separation of concerns. The separation of concerns can also apply at
+higher levels too. In object-oriented programming, classes define properties
+and behaviors of objects and each class should be responsible for one and only
+one thing. That thing might be to display a video, pay a bill, monitor a heartbeat,
+open a door, or even turn off a light. No other classes in a system should have
+a duplicate responsibility. Why? Well because it gets messy and confusing.
+Which class do I work with to turn off the light? If I modify the behavior in
+one class do I need to modify this similar class too? We can further scale
+up the notion of separation of concerns and DRY to an even higher level. We can
+separate the user interface component of a system from the parts that access a
+database. We can then separate out the part the part of the subsystem that
+communicates between the UI and the database. This separation takes the
+form a well-known pattern, that pattern is called Model View controller or the
+MVC pattern, and that's what we look at next.
+
 when DRY is implemented what's called Separation of concerns => the separation of concerns can also apply at heigher levels too. In OOP classes define properties , and behaviours of objects and each class should be responsible for one and only one thing, such as : display a video , pay a bill, monitor a heartbeat.......
 no wether classes on the system should have a duplicate responsibility ...why? because it gets messy and confusing
 
