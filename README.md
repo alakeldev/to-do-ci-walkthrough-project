@@ -257,7 +257,88 @@ Browser => URLS => Views => Models => Database
 
 Database => Models => Views => Templates => display on your browser
 
-
+Now what does Django look like? Well Django has built-in tools that are set
+up to create projects. In Django a project is a container for your site, a
+project is really just a collection of apps. And an app is a self-contained
+piece of functionality that contributes to your site as a whole. For example, an app
+might be a payment system, or a blog, or a forum. Apps are similar to modules in a
+content management system, CMS, but they tend to be a lot more smaller in scope.
+And they typically perform only one main function. This allows for the development
+and maintenance of a site at a more granular level. Individual apps can be
+modified or swapped out for other apps. All done in relative isolation
+from the functionality contained in other apps, separation of concerns.
+Multiple developers can work on the site via apps without corrupting each other's code.
+So for example, imagine you were building a Facebook clone. You might
+create a project called, the social, for example. Well take a moment to consider
+the structure you would deploy in Django, for example. For instance, the site might
+may contain apps like messaging, timeline ratings, some kind of info wall, adding
+friends, upload media, etc. All of which contribute to the overall site experience and functionality.
+These apps can be built and maintained separately from each other,
+but are all controlled from the project. Angular also adheres
+a variation of the MVC pattern. So Django projects are logically organised around
+the MVC pattern or the MVC architecture. However, Django MVC architecture is
+slightly different, in that the views also act as controllers, more on this.
+At a high level Django is organised in a variation of
+the MVC pattern, known as the MVT model view template. Is this is confusing?
+Possibly, but there are different flavors of MVC that can be head scratching but in
+Django the MVC view is called the template. The MVC model is still the
+model but the MV controller is called a view in Django. So the template is the
+user interface, the model is still the model, and the logic
+lives in views. Okay let's look at models in Django. Well Django works brilliantly
+with databases, the framework can take developer defined Python classes and
+known as models, and automatically create database tables and their relationship for us.
+So also any changes to our models can be automatically reflected in our
+database schemas, its all automated. This pattern is known as object relational
+mapping, ORM. A model is a single definitive source of information about
+your data, it contains the essential fields and behaviors of the data you're storing.
+Generally each map model maps to a single database table. To quickly get
+you up and running, Django comes with the SQLite database for development and
+testing. Although, I worked on a specialist project where a SQLite was
+used in production in general it lacks the power and functionality of say MySQL
+or Postgres, either which can be easily swapped in when deploying your project
+to a live or production environment. Like other full-stack frameworks such as
+Ruby, on Rails, or asp.net, MVC, and spring, etc. Java, spring, etc.
+Django adheres to the philosophy of convention over configuration. This means that a
+developer need only specify the unconventional aspects of the
+application. For example, if there's a class called blog in our model or code,
+the framework will create a corresponding table in the database
+called blog by default. It's only if you stray from this convention, such as
+calling the table the blog table, that you need to explicitly write the code to
+do that. This implicit functionality is an example of hiding the plumbing that
+we touched upon earlier. Bear in mind though, that for the Python purists this
+breaks the Zen of Python decree that explicit is better than implicit. That is
+Pythonista's say it's better to see the code it does something rather
+than having it hidden from the developer. Well, why? Well because when it comes to
+fixing or improving behavior it's easier to do this when the behavior is right
+there in your code. It's one of the downsides of having bells and whistles
+and batteries in your framework.
+Django also has templates, so this is the presentation layer that defines how
+information is displayed to the end-user. They visually represent the data model,
+the template layer provides a designer friendly syntax for rendering the
+information to be presented to the user. So what is the template philosophy?
+So business logic should be separated from the presentation logic, templates are
+only concerned with presentation of data and other visual elements.
+It's impossible to call Python code directly within Django templates.
+Templates syntax should be decoupled from HTML and designers assumed to be comfortable with
+HTML and JavaScript code. Designers are assumed not to be Python developers.
+Although, templates do accommodate small teams in which the templates are created
+by Python programmers. The syntax, template syntax is embedded within
+normal HTML and is used to inject data into a web page. The most common template
+language used is the Django template language. Although another templating
+language such as Jinja 2 for example can be used with most python-based
+frameworks, including Django. In the example, in the template examples shown
+here, we are looping through a list of colors and displaying a HTML list of each
+coders name. Now the goal of a template language is not to invent a full-blown
+programming language. The goal is to offer just enough programming ish
+functionality such as branching and looping, that allows us to make a GUI
+related decisions. So let's have a look at the views, for example. Now in Django,
+views define the business logic that link the templates and the models. Here's
+what happens when a visitor lands on your Django page, for example.
+So first, Django consults the various URL patterns that you've created and uses
+that information to retrieve a view. The view then processes the requests,
+querying your database via the models if it's necessary, the view then passes the
+request information onto your template. The template then renders the data in a
+layout you've created and displays it on the page so down it and back up.
 
 
 
