@@ -25,7 +25,8 @@ what are the goals of the framework?
 - Simplify software development by enabling agile practices
 - Reduce code writing
 - Allow inexperienced designeres and programmers to develop good software
-- Extract the knowledge of experienced designers and programmers
+- Extract the knowledge of experienced designers and programmers and they have their basic properties as well. So what are they?
+       The basic properties are:  [modularity, reusability, extensibility, inversion of control, and non-modifiable code].
 
 What are good development principles?
 KIS => Keep it simple
