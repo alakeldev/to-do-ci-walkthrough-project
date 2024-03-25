@@ -99,6 +99,8 @@ Separate:
 - Datastore access
 - logic that communicates between UI and datastore
 
+-----------
+
 Well known pattern: => MVC pattern
 
 What is a pattern?
