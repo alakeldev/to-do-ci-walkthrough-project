@@ -29,6 +29,7 @@ what are the goals of the framework?
        The basic properties are:  [modularity, reusability, extensibility, inversion of control, and non-modifiable code].
 
 What are good development principles?
+
 KIS => Keep it simple
 
 - The Simpler you code is the simpler it will be to maintain it in the future
