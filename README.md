@@ -155,6 +155,91 @@ Server Side Frameworks:
 it Cassified as either full frameworks or Micro Frameworks
 the difference between the two depends on how much low-level automation the framework is capable of.
 How many batteries for example: pre-install components come with the framework?
+Now let's look at server-side frameworks, well server-side frameworks can be
+classified as either full or micro. The difference between the two depends on
+how much low-level automation the framework is capable of.
+How many batteries for example, pre-install components come with the framework?
+Well full frameworks are chock full of pre-installed components and low-level
+automation, while the micro frameworks as you might imagine come with less bells
+and whistles. There are pros and cons to each framework type. So what are the pros for a full one?
+For example, like Django. Well you get many batteries included, there's lots
+of lower-level automation, for example, object relational mapping.
+The cons of full frameworks are their larger size, their less flexible
+than micro because of the large structure, and it also becomes more
+opinionated. So what are the pros of small ones? Something like flask, for
+example. Their small size, they have an initial shallower learning curve and
+they're very flexible to customisation. But the cons of this is there aren't as
+many batteries included as a full. There's less automation provided and the
+automation becomes steadily more complex when additional customisation is
+required due to the lack of these pre-built components. So choosing one
+particular framework for your project depends heavily on the project's requirements.
+Smaller projects or projects that require a lot of
+flexibility and customisation, they typically used micro frameworks.
+Developers often use full frameworks for large projects that don't require much
+low-level framework customisation. So let's look at Django as a full framework.
+Well Django is a powerful full server-side framework written using Python.
+So when you're out in the world working as a developer you're going to
+have to work to a schedule and hit deadlines, which are always tighter
+than you'd like. You're probably going to find that each project can have a common
+core set of issues. In addition to project specific ones, well what you need
+is a collection of tools that can take care of a lot of the heavy lifting so
+you can focus on the bigger picture. Well this is where Django and a lot of other
+frameworks as well come in. But as the Django
+Software Foundation put it, Django makes it easier to build
+better web apps, more quickly and with less code, so you can focus on writing
+your app without needing to reinvent the wheel.
+So why Django, why choose it? Well it's a mature framework, it's been around since
+about 2003. Django was originally developed as an in-house framework to
+manage a series of online news websites, and Django grew organically
+from real-world applications written by a web development team in Kansas in USA.
+When web programmers at the Lawrence Journal World newspaper began using
+Python to build applications. The world online team who were responsible for the
+production and maintenance of several local news sites. Well they thrived in a
+development environment dictated by journalism deadlines. There were three
+online newspapers owned and supported by the team there was the LJ World.com. there
+was Lawrence.com and cavesforce.com. The journalists on the team demanded the
+features be added an entire applications be built on incredibly short deadlines.
+Sometimes stuff had to be built or added even within hours. So in an attempt
+to avoid repeating themselves and building the same stuff over and over
+again. The developers set about building a framework that suited their needs
+under such pressure. They called a framework Django after their shared love
+of the jazz guitarist Django Reinhardt. So, two years later the source code was
+then released publicly, on the net, and the Django team carried on with the
+development and contributing to the open-source model.
+Because Django was created in a news environment it has built-in features that are very suitable
+to content management. Such as an administration interface where
+developers and users can add and edit content and elements through a backdoor
+interface available only to authorised users. Most data-driven web applications
+will require some kind of administration screens to add and modify data whether
+that data includes registered users on the site or products being sold.
+In keeping with its DRY philosophy, Django allows you to administer your
+model data through the webpage courtesy of the administration module.
+This saves you from having to build your own from scratch. And to enable the existence of
+authorised and authenticated users Django also comes with pre built
+authentication functionality. But don't think that Django is limited
+just to content management. It's much more powerful and flexible than that.
+Django has steadily become a favorite amongst the Python development community.
+Currently Django sites.org lists nearly 5,000 sites built with this
+framework. The most famous of them being Pinterest, Instagram, and Discuss.
+So EDX, for example, the massive open line online community course is developed jointly by
+Harvard and MIT is also developed by Django.
+What's more the edx is now open source and there are over 70 companies
+contributing to its development. So there's a ton of pre-built functionality
+available to anybody wanting to use this platform. And because it's a free full
+stack framework Django serves is the perfect starting point if you're new to
+web frameworks. Django's documentation is rich and mature which is a major plus
+for anyone trying to tackle the intricacies of a data-driven project often
+for the first time. Also, Django's admin interface is great for
+data entry and testing during the early stages of a project. So, to quote the
+official website in Django project.com, Django is a high-level Python web
+framework that encourages rapid development and clean pragmatic design.
+It's built by experienced developers, it takes care of much of the hassle of web
+development, so you can focus on writing your app without needing to reinvent the wheel
+it's free and it's also open source.
+
+------------------------
+
+
 
 Django:
 What does Django look like?
