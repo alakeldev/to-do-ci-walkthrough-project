@@ -111,9 +111,9 @@ no one such pattern used at the heart of most frameworks is a model view control
 Important to focus:
 it's a way to structure your application
 it's a way of working with data in its three mainfestations:
-data at rest => model           SQL
-data in motion => controller    Python
-data as presented => view       HTML
+data at rest => model           SQL |
+data in motion => controller    Python |
+data as presented => view       HTML |
 
 Frameworks implement the MVC pattern, but the pattern is not a framework
 Frame works are popular because of MVC
