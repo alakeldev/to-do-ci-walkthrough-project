@@ -147,7 +147,9 @@ View: Can consists of templates it's the only thing that the user sees, and it i
 
 Controller: never talk to the database directly only to the model, the model responsbile for fetching the data and exit, it never talk to the screen directly eighter only to the view. so the event handling process such as get, put, delete. these are all requests in the view and they are processed by the controller.
 
-Every application needs some structure expecially the more complex ones, MVC helps you stay organized from start to finish, you often end up writing less code not more, and slo there is a shallower learning curve as your project grows
+Every application needs some structure expecially the more complex ones, MVC helps you stay organized from start to finish, you often end up writing less code not more, and slo there is a shallower learning curve as your project grows.
+
+----------------------------------------------------------------
 
 Server Side Frameworks:
 it Cassified as either full frameworks or Micro Frameworks
