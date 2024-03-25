@@ -454,4 +454,46 @@ python -m coverage report
 
 
 
+## Deplay process:
+
+
+You learned the different settings that were required prior to deployment, and took a deeper
+dive into the settings.py and requirements.txt files.
+In this video, we will review the deployment flow including the use of the Procfile, before
+leaving you with some key takeaways from the lesson.
+First, let’s consider what happens when we deploy to Heroku for a moment.
+We deployed our simple project by creating a Heroku app - not to be confused with a Django
+app - and attached our GitHub repository to it.
+During the deployment, Heroku cloned the repository and determined that our project was written
+in Python.
+As a result, it started to process the requirements.txt file to install the packages we need.
+Heroku then examined the Procfile.
+If you remember, the Procfile is in this format: process type : command
+In our case, we stated that the process type was web.
+This specifies that we are running a web application.
+There are other process types, but web is the most common.
+The command is what we would type to run the project.
+When we run it in the terminal, we type python3 manage.py runserver
+You could put that command in the Procfile too if you want.
+The reason we use gunicorn to run the project is that it is a more robust and scalable,
+production-ready server.
+You may be curious about what my_project.wsgi means.
+Each directory in our Django project is actually a Python package.
+So, my_project.wsgi means the wsgi module in the my_project package.
+If you have a look in the my_project directory, you will see a wsgi.py file.
+That is what is being referred to.
+WSGI, which - to my delight - is pronounced whiskey, stands for Web Server Gateway Interface.
+It was created to allow web servers to communicate with Python web frameworks in a uniform, consistent
+way.
+When the repository is cloned, the requirements are installed and the Procfile is in place,
+Heroku knows exactly how to run our project.
+The key points we would like you to remember from this lesson are:
+Deploy early and regularly Add, commit and push your code to GitHub regularly
+Recreate your requirements.txt file after every new package is installed
+Always switch DEBUG to False in your deployed project
+In this lesson, we have learned how to deploy a Django project to Heroku and we have looked
+in detail at the settings.py and requirements.txt file.
+In this video, we have looked at the deployment flow and demystified the Procfile.
+Now, proceed on to the quiz before we begin building a full-featured Django project.
+
 python -m coverage html
