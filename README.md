@@ -128,7 +128,7 @@ Database => Models => Views => Templates => display on your browser
 
 
 # Django Section Importan Information and commands:
-
+- Django is an open-source web framework for building robust and dynamic web applications with ease.
 - Django Project => serves as the top-level container for your web application. It encompasses everything related to your application, including settings, URLs, database configurations, and more.
 - Django Applications =>  it is a Python package that provides a specific set of features. Applications are wired into projects using the INSTALLED_APPS setting in the project’s settings.py. This setting specifies which applications are part of the project.
 
