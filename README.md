@@ -453,6 +453,9 @@ python -m coverage report
 
 
 
+python -m coverage html
+
+
 
 ## Deplay process:
 
@@ -496,4 +499,6 @@ in detail at the settings.py and requirements.txt file.
 In this video, we have looked at the deployment flow and demystified the Procfile.
 Now, proceed on to the quiz before we begin building a full-featured Django project.
 
-python -m coverage html
+https://devcenter.heroku.com/articles/procfile#the-web-process-type
+
+
