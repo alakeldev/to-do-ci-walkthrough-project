@@ -34,11 +34,13 @@ KIS => Keep it simple
 - The Simpler you code is the simpler it will be to maintain it in the future
 - Most Systems work best if they are kept simple rather than making them complex
 - Don't rusing features from the programming language just because you can
+
 YAGNI => You are not gonna need it
 - Developers often project into the future when coding
  	- Try tp anticipate extra features that might be needed at some point
 - If you don't need it now you moslt likely won't need it later
 - Do the Simplest thing that could possibly work
+
 DRY => Don't repeat yourself
 - knowledge must have a single, unambiguous, authoritative representation within a system
 - Do things one time, in one place rather than having the same or similar code scattered throughout your code base
